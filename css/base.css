@@ -23,6 +23,9 @@ body {
   top: 143px;
   left: 86px;
 }
+.text.two {
+  left: 63vw;
+}
 .text h2 {
   letter-spacing: 2px;
   font-size: 80px;
@@ -30,10 +33,27 @@ body {
   color: #FF5050;
 }
 
+.text h3 {
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 0 50px 0;
+  color: #3D3A36;
+}
+
 .text p {
   font-size: 30px;
   line-height: 34px;
   color: #3D3A36;
+}
+.one {
+  position: absolute;
+  top: 161px;
+  left: 86px;
+  width: 540px;
+  height: 410px;
+  background-size: cover;
+  background-image: url(../imgs/6.jpeg);
 }
 
 .picture {
@@ -102,6 +122,20 @@ body {
   background-image: url(../imgs/345.jpeg);
 }
 
+#picture8 {
+  width: 600px;
+  height: 200px;
+  padding: 40px;
+  filter: blur(3px);
+  background-image: url(../imgs/7.jpeg);
+}
+.footer {
+  position: absolute;
+  top: 161px;
+  left: 86px;
+  width: 540px;
+  height: 410px;
+}
 
 .parallax {
  height: 500px;
