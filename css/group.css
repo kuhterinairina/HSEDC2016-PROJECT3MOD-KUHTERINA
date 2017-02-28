@@ -2,7 +2,7 @@
     z-index: 5;
   }
   #group1 .parallax__layer--base {
-    background-image: url(../imgs/pic1.jpeg);
+    background-image: url(../imgs/pic1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -54,5 +54,6 @@
   }
   #group7 .parallax__layer--base {
     background: #EFEFEF;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.4);
 
   }

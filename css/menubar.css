@@ -1,0 +1,86 @@
+.menubar {
+  width: 100%;
+}
+.menubar div {
+  display: flex;
+  height: 35px;
+  justify-content: flex-end;
+  padding-right: 30px;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background: white;
+}
+/*.logo {
+  display: block;
+  width: 21vh;
+  height: 10vh;
+  background-image: url(../imgs/logo.svg);
+  background-repeat: no-repeat;
+}*/
+
+.about {
+  font-size: 20px;
+  color: #FA5855;
+  text-decoration: none;
+  padding-right: 13px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.menu {
+  background-image: url(../imgs/menu.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate();
+  width: 90px;
+  height: 65px;
+}
+.menubar figure {
+  height: 35px;
+  width: 20px;
+  z-index: 1;
+}
+
+.menubar2 {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 35px;
+  height: 100%;
+  background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+}
+.menubar2 div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 71px;
+  padding-left: 9px;
+}
+
+
+
+.menubar3 {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+  height: 35px;
+  background: white;
+}
+.menubar4 {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 100%;
+  z-index: 1;
+  background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+}

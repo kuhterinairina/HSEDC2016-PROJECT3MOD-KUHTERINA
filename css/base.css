@@ -1,4 +1,10 @@
-body {
+* {
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+}
+
+html, body {
+  height: 100%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .title {
@@ -11,25 +17,50 @@ body {
  left: 50%;
  top: 50%;
  /*padding: 23%;*/
- letter-spacing: 6px;
- font-size: 158px;
  color: white;
  -webkit-transform: translate(-50%, -50%);
  transform: translate(-50%, -50%);
 }
 
+.title h1 {
+  letter-spacing: 6px;
+  font-size: 140px;
+  padding: 0 0 32px 0;
+}
+
+.title p {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 39px;
+  letter-spacing: 2px;
+}
+
+.title figure, .text.three figure {
+  position: relative;
+  width: 120px;
+  height: 10px;
+  margin: 0 auto;
+  background: #FF5050;
+}
+
 .text {
-  position: absolute;
+  position: relative;
   top: 143px;
-  left: 86px;
+  left: 106px;
 }
 .text.two {
-  left: 63vw;
+  left: 828px;
+}
+
+.text.three {
+  left: 0;
 }
 .text h2 {
+  font-weight: 300;
   letter-spacing: 2px;
   font-size: 80px;
-  padding: 0 0 67px 0;
+  padding: 0 0 38px 0;
   color: #FF5050;
 }
 
@@ -37,25 +68,30 @@ body {
   letter-spacing: 2px;
   font-size: 35px;
   font-weight: bold;
-  padding: 0 0 50px 0;
+  padding: 0 0 25px 0;
   color: #3D3A36;
 }
 
 .text p {
-  font-size: 30px;
-  line-height: 34px;
+  font-size: 25px;
+  line-height: 39px;
   color: #3D3A36;
+  letter-spacing: 1px;
 }
+
 .one {
   position: absolute;
-  top: 161px;
+  top: 144px;
   left: 86px;
-  width: 540px;
-  height: 410px;
+  width: 520px;
+  height: 390px;
   background-size: cover;
   background-image: url(../imgs/6.jpeg);
 }
+.two {
+  top: 213px;
 
+}
 .picture {
   position: relative;
   background-size: cover;
@@ -63,7 +99,7 @@ body {
 
 }
 .pics {
-  margin-top: 100px;
+  margin-top: 120px;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -78,7 +114,7 @@ body {
   left: 350px;
   width: 360px;
   height: 440px;
-  background-image: url(../imgs/1.jpeg);
+  background-image: url(../imgs/1.png);
 }
 
 #picture2 {
@@ -89,8 +125,8 @@ body {
 }
 
 #picture3 {
-  width: 360px;
-  height: 440px;
+  width: 240px;
+  height: 300px;
   filter: blur(3px);
   background-image: url(../imgs/23.jpeg);
 }
@@ -103,9 +139,8 @@ body {
 }
 
 #picture5 {
-  width: 200px;
+  width: 290px;
   height: 360px;
-  padding: 50px;
   background-image: url(../imgs/g1.jpeg);
 }
 
@@ -116,25 +151,38 @@ body {
 }
 
 #picture7 {
-  width: 150px;
+  width: 230px;
   height: 300px;
-  padding: 40px;
   background-image: url(../imgs/345.jpeg);
 }
 
 #picture8 {
-  width: 600px;
-  height: 200px;
+  width: 640px;
+  height: 420px;
   padding: 40px;
   filter: blur(3px);
   background-image: url(../imgs/7.jpeg);
 }
 .footer {
+  text-align: center;
+}
+.footer figure {
   position: absolute;
-  top: 161px;
-  left: 86px;
-  width: 540px;
-  height: 410px;
+  bottom: 0;
+  width: 100%;
+  background: #3d3a36;
+  height: 90px;
+}
+
+#footer {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 55px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  color: #efefef;
 }
 
 .parallax {
@@ -144,14 +192,19 @@ body {
  overflow-y: auto;
  -webkit-perspective: 300px;
  perspective: 300px;
+  width: 1600px;
+  margin: 0 auto;
+  background-color: white;
+
 }
 
-.parallax__group {
+.parallaxgroup {
  position: relative;
  height: 700px;
  height: 100vh;
  -webkit-transform-style: preserve-3d;
  transform-style: preserve-3d;
+ width: 100%;
 }
 
 .parallax__layer {
@@ -184,4 +237,72 @@ body {
  -webkit-transform: translateZ(-600px) scale(3);
  transform: translateZ(-600px) scale(3);
  z-index: 2;
+}
+
+@media screen and (max-width: 1440px) {
+  .parallax {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+
+  .text.two {
+    left: 628px;
+  }
+
+  .text h2 {
+    letter-spacing: 2px;
+    font-size: 80px;
+  }
+
+  .text h3 {
+    letter-spacing: 2px;
+    font-size: 35px;
+  }
+
+  .text p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .one {
+    width: 460px;
+    height: 354px;
+  }
+  .two {
+    top: 213px;
+
+  }
+
+  .pics {
+    margin-top: 120px;
+  }
+  .pics2 {
+    margin-top: 150px;
+  }
+  #picture1 {
+    left: 270px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .full {
+    display: none;
+  }
+
+  .compact {
+    display: block;
+  }
+  .title h1 {
+    letter-spacing: 3px;
+    font-size: 110px;
+  }
+
+  .title p {
+    font-size: 33px;
+    line-height: 35px;
+  }
+
 }
