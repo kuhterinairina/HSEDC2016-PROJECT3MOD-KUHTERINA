@@ -281,23 +281,3 @@ html, body {
   }
 
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .full {
-    display: none;
-  }
-
-  .compact {
-    display: block;
-  }
-  .title h1 {
-    letter-spacing: 3px;
-    font-size: 110px;
-  }
-
-  .title p {
-    font-size: 33px;
-    line-height: 35px;
-  }
-
-}
