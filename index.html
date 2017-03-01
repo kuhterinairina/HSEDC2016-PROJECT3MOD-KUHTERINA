@@ -9,29 +9,26 @@
     <title></title>
   </head>
   <body>
-    <nav class="menubar">
-      <div>
-        <a class="logo" href=""></a>
-        <a class="about" href="">CONTACTS</a>
-        <figure></figure>
-        <a class="about" href="">ABOUT</a>
-
+    <div class='menu'>
+      <span class='toggle'>
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <div class='menuContent'>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>About</li>
+          <li>Gallery</li>
+          <li>Contact</li>
+        </ul>
       </div>
-    </nav>
-    <nav class="menubar2">
-      <div>
-        <a class="menu" href=""></a>
-      </div>
-    </nav>
-    <nav class="menubar3">
-      <div></div>
-    </nav>
-    <nav class="menubar4">
-      <div></div>
-    </nav>
+      <script src='js/jquery.min.js'></script>
+      <script src="js/index.js"></script>
+    </div>
     <div class="parallax">
       <div id="group1" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
           <div class="title">
             <h1>VAN GOGH</h1>
             <figure></figure>
@@ -40,7 +37,7 @@
         </div>
       </div>
       <div id="group2" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
           <div class="text">
             <h2>
             ABOUT<br>
@@ -56,18 +53,18 @@
             </p>
           </div>
         </div>
-        <div class="parallax__layer parallax__layer--back">
+        <div class="parallaxlayer layerback">
           <div class="title">
             <div class="picture" id="picture1"></div>
           </div>
         </div>
       </div>
       <div id="group3" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--fore">
-          <div  class="one">
+        <div class="parallaxlayer layerfore">
+          <div  class="picture" id="picture9">
           </div>
         </div>
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
           <section class="two">
             <div class="text two">
               <h2>ABOUT PROJECT</h2>
@@ -81,17 +78,17 @@
         </div>
       </div>
       <div id="group4" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
           <div class="title"><h1>NEW GALLERY</h1></div>
         </div>
-        <div class="parallax__layer parallax__layer--back">
+        <div class="parallaxlayer layerback">
           <div class="pics2">
             <figure class="picture" id="picture5"></figure>
             <figure class="picture" id="picture6"></figure>
             <figure class="picture" id="picture7"></figure>
           </div>
         </div>
-        <div class="parallax__layer parallax__layer--deep">
+        <div class="parallaxlayer layerdeep">
           <div class="pics">
             <figure class="picture" id="picture2"></figure>
             <figure class="picture" id="picture3"></figure>
@@ -100,7 +97,7 @@
         </div>
       </div>
       <div id="group5" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--fore">
+        <div class="parallaxlayer layerfore">
           <div class="title">
             <h1>WHY THIS ARTIST?</h1>
             <figure></figure>
@@ -108,25 +105,25 @@
             and perfect composition</p>
           </div>
         </div>
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
         </div>
       </div>
       <div id="group6" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--back">
+        <div class="parallaxlayer layerback">
           <div class="pics2">
             <figure class="picture" id="picture8"></figure>
           </div>
         </div>
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
           <div class="title"><h1>SEE THE FIRST NOW</h1>
             <div class="btn">
-              <a href="#">GO!</a>
+              <a href="pic/demo.html">GO!</a>
             </div>
           </div>
         </div>
       </div>
       <div id="group7" class="parallaxgroup">
-        <div class="parallax__layer parallax__layer--base">
+        <div class="parallaxlayer layerbase">
           <div class="footer">
             <section class="text three">
               <h2>DEVELOPMENT</h2>
@@ -138,7 +135,7 @@
               </p>
               <nav>
                 <a class="buttons red" href="#">Gallery</a>
-                <a class="buttons border" href="#">GitHub</a>
+                <a class="buttons border" href="https://github.com/kuhterinairina/HSEDC2016-PROJECT3MOD-KUHTERINA">GitHub</a>
               </nav>
             </section>
             <div id="footer">

@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&subset=cyrillic');
 @import "reset.css";
-@import "base.css";
-@import "group.css";
-@import "pic.css";
 @import "menu.css";
-@import "sidebar.css";
-@import "buttons.css";
+@import "main.css";
